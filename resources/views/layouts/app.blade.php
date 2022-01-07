@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/custom.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -79,5 +81,8 @@
             @yield('content')
         </main>
     </div>
+
+    <!-- Scripts -->
+    <script src="{{ asset('frontend/bootstrap.bundle.min.js') }}" defer></script>
 </body>
 </html>
