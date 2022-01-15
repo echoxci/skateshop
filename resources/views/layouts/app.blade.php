@@ -18,8 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -83,6 +83,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('frontend/bootstrap.bundle.min.js') }}" defer></script>
+    <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>
 </body>
 </html>

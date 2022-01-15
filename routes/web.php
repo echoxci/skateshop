@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Admin\FrontendController;
+use App\Http\Controllers\Frontend\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +17,17 @@ use App\Http\Controllers\Admin\FrontendController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', [FrontendController::class, 'index']);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::middleware(['auth', 'isAdmin'])->group(function () {
-    Route::get('/dashboard', [FrontendController::class, 'index']);
+    Route::get('/dashboard', 'Admin\FrontendController@index');
 
     Route::get('categories', [CategoryController::class, 'index']);
     Route::get('add-category', [CategoryController::class, 'add']);
