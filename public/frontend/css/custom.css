@@ -1,0 +1,57 @@
+body {
+    background: rgba(10,1,1,0.10);
+}
+.logo {
+    width:40px;
+}
+.navbar-dark {
+    background-color: brown;
+}
+a {
+    text-decoration: none !important;
+    color: black;
+}
+.btn-primary {
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    color: white;
+    background-color: brown;
+}
+.btn-primary:hover {
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    color: white;
+    background-color: darkred;
+}
+.btn-primary:focus {
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    color: white;
+    background-color: darkred;
+}
+.nav-link {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.90);
+}
+.navbar-dark .navbar-nav .nav-link .active{
+    color: #7c90d4;
+}
+/*.carousel-caption {*/
+/*    color: brown;*/
+/*}*/
+.bg-warning {
+    background-color: brown !important;
+    color: white;
+    border-color: brown !important;
+}
+a.top-bar {
+    color: #cecece;
+}
+a.top-bar:hover {
+    color: white;
+}

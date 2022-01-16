@@ -24,3 +24,23 @@
     -moz-appearance: none;
     appearance: none;
 }
+.sidebar[data-color="purple"] li.active>a {
+    background-color: brown;
+}
+a.dropdown-item:hover {
+    background-color: brown;
+}
+a.dropdown-item:active {
+    background-color: brown;
+}
+.btn-primary {
+    background-color: brown !important;
+}
+.btn-danger {
+    background-color: grey !important;
+    color: black !important;
+    border-color: dimgrey !important;
+}
+.a:hover {
+    background-color: brown;
+}

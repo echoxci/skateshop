@@ -13,24 +13,7 @@
                     Skateshop sa nachádza v Turčianskych Tepliciach a ponúka tie najkvalitnejšie skateboardove komponenty na predaj. <br>
                     K dispozícií sú skate komplety, dosky, trucky, kolieska, ložiská a hardware od svetových značiek.
                 </p>
-                <a class="btn btn-primary btn-xl" data-bs-toggle="collapse" href="#collapseAbout">Zobraziť menej</a>
                 <a class="btn btn-primary btn-xl" href="#portfolio" aria-expanded="false">Fotky skateshopu</a>
-                <div id="collapseAbout" class="collapse show pt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis dignissimos doloremque eos error esse fugit, laborum maiores neque nisi quasi repellat rerum sapiente vel, vero voluptas voluptatem voluptatum. Quas?
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur delectus ducimus est excepturi, facere illum minima ratione saepe sequi vero voluptatibus, voluptatum! Atque dolores eligendi pariatur quod unde veritatis!
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ea est non quasi rerum vero voluptatibus. Assumenda autem iure perspiciatis quaerat soluta! Animi corporis culpa earum iusto nam soluta voluptatibus?
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur deserunt fugiat id ipsam iste itaque, laudantium maiores minus molestias nesciunt nulla, perferendis quasi qui quia quod repudiandae tempore unde?
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet animi et labore magnam minus mollitia nesciunt, non, odio, praesentium provident reiciendis tempora velit veritatis voluptate? Asperiores commodi id quasi!
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta eveniet ipsam iure perspiciatis porro reiciendis reprehenderit veritatis vero, voluptatem. Aspernatur doloribus earum molestias officia placeat quod sequi similique voluptates.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid animi, aut consequuntur cupiditate dolor, ea earum illum magnam minima molestias obcaecati, odit perferendis quas quibusdam quidem reiciendis suscipit voluptatibus!
-                    <br>
-                </div>
             </div>
         </div>
     </div>
