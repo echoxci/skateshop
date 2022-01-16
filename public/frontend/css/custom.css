@@ -58,3 +58,7 @@ a.top-bar {
 a.top-bar:hover {
     color: white;
 }
+.cart-img {
+    height: 100px;
+    width: 100px;
+}

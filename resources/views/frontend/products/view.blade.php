@@ -12,7 +12,7 @@
     </div>
 
     <div class="container">
-        <div class="card shadow">
+        <div class="card shadow product_data">
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-4 border-right">
@@ -40,6 +40,7 @@
                         @endif
                         <div class="row mt-3">
                             <div class="col-md-2">
+                                <input type="hidden" value="{{ $products->id }}" class="prod_id">
                                 <label for="mnozstvo">Mnozstvo</label>
                                 <div class="input-group text-center mb-3">
                                     <button class="input-group-text decrement-btn">-</button>
@@ -49,7 +50,7 @@
                             </div>
                             <div class="col-md-10">
                                 <br>
-                                <button type="button" class="btn btn-primary me-3 float-start"> <i class="fa fa-shopping-cart"></i> Pridat do kosika</button>
+                                <button type="button" class="btn btn-primary me-3 float-start addToCartBtn"> <i class="fa fa-shopping-cart"></i> Pridat do kosika</button>
                             </div>
                         </div>
                     </div>
@@ -59,32 +60,3 @@
     </div>
 @endsection
 
-@section('scripts')
-    <script>
-        $(document).ready(function (){
-            $('.increment-btn').click(function(e){
-               e.preventDefault();
-
-               var inc_value = $('.qty-input').val();
-               var value = parseInt(inc_value, 10);
-               value = isNaN(value) ? 0 : value;
-               if (value < 10) {
-                   value++;
-                   $('.qty-input').val(value);
-               }
-            });
-
-            $('.decrement-btn').click(function(e){
-                e.preventDefault();
-
-                var dec_value = $('.qty-input').val();
-                var value = parseInt(dec_value, 10);
-                value = isNaN(value) ? 0 : value;
-                if (value > 1) {
-                    value--;
-                    $('.qty-input').val(value);
-                }
-            });
-        });
-    </script>
-@endsection
