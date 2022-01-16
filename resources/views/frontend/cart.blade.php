@@ -14,7 +14,7 @@
                     <div class="col-md-1">
                         <img src="{{ asset('assets/uploads/products/'.$item->products->image) }}" class="cart-img" alt="Image here">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <h6>{{ $item->products->name }}</h6>
                     </div>
                     <div class="col-md-2">
@@ -39,7 +39,7 @@
         <div class="card-footer">
             <h6>
                 Celkova cena: {{ $total }} &euro;
-                <button class="btn btn-success float-end">Pokracovat</button>
+                <a href="{{ url('checkout') }}" class="btn btn-success float-end">Pokracovat</a>
             </h6>
 
         </div>
