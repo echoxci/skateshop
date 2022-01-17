@@ -22,18 +22,22 @@
                     </div>
                     <div class="col-md-3">
                         <input type="hidden" class="prod_id" value="{{ $item->prod_id }}">
+                        @if($item->products->qty > $item->prod_qty)
                         <label for="mnozstvo">Mnozstvo</label>
                         <div class="input-group text-center mb-3" style="width: 130px">
                             <button class="input-group-text change-quantity decrement-btn">-</button>
                             <input type="text" name="mnozstvo" value="{{ $item->prod_qty }}" class="form-control text-center qty-input">
                             <button class="input-group-text change-quantity increment-btn">+</button>
                         </div>
+                            @php $total += $item->products->selling_price * $item->prod_qty @endphp
+                        @else
+                            <h6>Nie je na sklade</h6>
+                        @endif
                     </div>
                     <div class="col-md-2">
                         <button class="btn btn-danger delete-cart-item"><i class="fa fa-trash"></i>Remove</button>
                     </div>
                 </div>
-                @php $total += $item->products->selling_price * $item->prod_qty @endphp
             @endforeach
         </div>
         <div class="card-footer">

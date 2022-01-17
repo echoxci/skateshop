@@ -50,7 +50,9 @@
                             </div>
                             <div class="col-md-10">
                                 <br>
-                                <button type="button" class="btn btn-primary me-3 float-start addToCartBtn"> <i class="fa fa-shopping-cart"></i> Pridat do kosika</button>
+                                @if($products->qty > 0)
+                                    <button type="button" class="btn btn-primary me-3 float-start addToCartBtn"> <i class="fa fa-shopping-cart"></i> Pridat do kosika</button>
+                                @endif
                             </div>
                         </div>
                     </div>
