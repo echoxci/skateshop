@@ -66,15 +66,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                @php $total = 0; @endphp
                                     @foreach($cartItems as $item)
                                         <tr>
                                             <td>{{ $item->products->name }}</td>
                                             <td>{{ $item->prod_qty }} ks</td>
                                             <td>{{ $item->products->selling_price }} &euro;</td>
                                         </tr>
+                                        @php $total += $item->products->selling_price * $item->prod_qty @endphp
                                     @endforeach
                                 </tbody>
                             </table>
+                            <h3>Celková cena: {{ $total }} &euro;</h3>
                             <hr>
                             <button type="submit" class="btn btn-primary w-100">Dokončiť objednávku</button>
                         </div>
