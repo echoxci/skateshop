@@ -34,6 +34,12 @@
                     <p>Pridat produkt</p>
                 </a>
             </li>
+            <li class="nav-item {{ Request::is('orders') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('orders') }}">
+                    <i class="material-icons">content_paste</i>
+                    <p>Objednavky</p>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
