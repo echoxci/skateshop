@@ -16,32 +16,32 @@
                         <input id="add-name" type="text" class="form-control" name="name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Slug</label>
-                        <input type="text" class="form-control" name="slug" required>
+                        <label for="add-slug">Slug</label>
+                        <input id="add-slug" type="text" class="form-control" name="slug" required>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Description</label>
-                        <textarea name="description" rows="3" class="form-control" required></textarea>
+                        <label for="add-desc">Description</label>
+                        <textarea id="add-desc" name="description" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Status</label>
-                        <input type="checkbox" name="status">
+                        <label for="add-status">Status</label>
+                        <input id="add-status" type="checkbox" name="status">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Popular</label>
-                        <input type="checkbox" name="popular">
+                        <label for="add-popular">Popular</label>
+                        <input id="add-popular" type="checkbox" name="popular">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Meta Title</label>
-                        <input type="text" class="form-control" name="meta_title" required>
+                        <label for="add-meta-title">Meta Title</label>
+                        <input id="add-meta-title" type="text" class="form-control" name="meta_title" required>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Keywords</label>
-                        <textarea name="meta_keywords" rows="3" class="form-control" required></textarea>
+                        <label for="add-meta-keyw">Meta Keywords</label>
+                        <textarea id="add-meta-keyw" name="meta_keywords" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Description</label>
-                        <textarea name="meta_description" rows="3" class="form-control" required></textarea>
+                        <label for="add-meta-desc">Meta Description</label>
+                        <textarea id="add-meta-desc" name="meta_description" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control">

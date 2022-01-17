@@ -16,36 +16,36 @@
                             <hr>
                             <div class="row checkout-form">
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Meno</label>
-                                    <input type="text" class="form-control" name="fname" placeholder="Zadajte svoje meno" required>
+                                    <label for="checkout-fname">Meno</label>
+                                    <input id="checkout-fname" type="text" class="form-control" name="fname" placeholder="Zadajte svoje meno" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Priezvisko</label>
-                                    <input type="text" class="form-control" name="lname" placeholder="Zadajte svoje priezvisko" required>
+                                    <label for="checkout-lname">Priezvisko</label>
+                                    <input id="checkout-lname" type="text" class="form-control" name="lname" placeholder="Zadajte svoje priezvisko" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Email</label>
-                                    <input type="text" class="form-control" name="email" placeholder="Zadajte svoj email" required>
+                                    <label for="checkout-email">Email</label>
+                                    <input id="checkout-email" type="text" class="form-control" name="email" placeholder="Zadajte svoj email" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Tel. cislo</label>
-                                    <input type="text" class="form-control" name="phone" placeholder="Zadajte svoje telefonne cislo"required>
+                                    <label for="checkout-phone">Tel. cislo</label>
+                                    <input id="checkout-phone" type="text" class="form-control" name="phone" placeholder="Zadajte svoje telefonne cislo"required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Adresa 1</label>
-                                    <input type="text" class="form-control" name="address1" placeholder="Zadajte svoju adresu" required>
+                                    <label for="checkout-add1">Adresa 1</label>
+                                    <input id="checkout-add1" type="text" class="form-control" name="address1" placeholder="Zadajte svoju adresu" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Adresa 2</label>
-                                    <input type="text" class="form-control" name="address2" placeholder="Zadajte svoju adresu" required>
+                                    <label for="checkout-add2">Adresa 2</label>
+                                    <input id="checkout-add2" type="text" class="form-control" name="address2" placeholder="Zadajte svoju adresu" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">Mesto</label>
-                                    <input type="text" class="form-control" name="mesto" placeholder="Zadajte svoje mesto" required>
+                                    <label for="checkout-city">Mesto</label>
+                                    <input id="checkout-city" type="text" class="form-control" name="mesto" placeholder="Zadajte svoje mesto" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="">PSC</label>
-                                    <input type="text" class="form-control" name="psc" placeholder="Zadajte svoj PSC" required>
+                                    <label for="checkout-psc">PSC</label>
+                                    <input id="checkout-psc" type="text" class="form-control" name="psc" placeholder="Zadajte svoj PSC" required>
                                 </div>
                             </div>
                         </div>
