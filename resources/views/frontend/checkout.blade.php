@@ -17,35 +17,35 @@
                             <div class="row checkout-form">
                                 <div class="col-md-6 mt-3">
                                     <label for="">Meno</label>
-                                    <input type="text" class="form-control" name="fname" placeholder="Zadajte svoje meno">
+                                    <input type="text" class="form-control" name="fname" placeholder="Zadajte svoje meno" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Priezvisko</label>
-                                    <input type="text" class="form-control" name="lname" placeholder="Zadajte svoje priezvisko">
+                                    <input type="text" class="form-control" name="lname" placeholder="Zadajte svoje priezvisko" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Email</label>
-                                    <input type="text" class="form-control" name="email" placeholder="Zadajte svoj email">
+                                    <input type="text" class="form-control" name="email" placeholder="Zadajte svoj email" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Tel. cislo</label>
-                                    <input type="text" class="form-control" name="phone" placeholder="Zadajte svoje telefonne cislo">
+                                    <input type="text" class="form-control" name="phone" placeholder="Zadajte svoje telefonne cislo"required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Adresa 1</label>
-                                    <input type="text" class="form-control" name="address1" placeholder="Zadajte svoju adresu">
+                                    <input type="text" class="form-control" name="address1" placeholder="Zadajte svoju adresu" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Adresa 2</label>
-                                    <input type="text" class="form-control" name="address2" placeholder="Zadajte svoju adresu">
+                                    <input type="text" class="form-control" name="address2" placeholder="Zadajte svoju adresu" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">Mesto</label>
-                                    <input type="text" class="form-control" name="mesto" placeholder="Zadajte svoje mesto">
+                                    <input type="text" class="form-control" name="mesto" placeholder="Zadajte svoje mesto" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="">PSC</label>
-                                    <input type="text" class="form-control" name="psc" placeholder="Zadajte svoj PSC">
+                                    <input type="text" class="form-control" name="psc" placeholder="Zadajte svoj PSC" required>
                                 </div>
                             </div>
                         </div>
