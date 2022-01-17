@@ -53,6 +53,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="card">
+                        @if($cartItems->count() > 0)
                         <div class="card-body">
                             <h6>Vasa objednavka</h6>
                             <hr>
@@ -77,6 +78,12 @@
                             <hr>
                             <button type="submit" class="btn btn-primary w-100">Dokoncit objednavku</button>
                         </div>
+                        @else
+                        <div class="card-body text-center">
+                            <h5 class="text-center">Nemate v kosiku ziadny produkt</h5>
+                            <a href="{{ url('category') }}" class="btn btn-primary float-end">Zacat s nakupom</a>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>

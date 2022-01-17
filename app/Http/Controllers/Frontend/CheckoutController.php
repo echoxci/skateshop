@@ -35,6 +35,16 @@ class CheckoutController extends Controller
         $order->address2 = $request->input('address2');
         $order->mesto = $request->input('mesto');
         $order->psc = $request->input('psc');
+
+        //na vypocet celkovej ceny
+        $total = 0;
+        $cartItems_total = Cart::where('user_id', Auth::id())->get();
+        foreach ($cartItems_total as $prod) {
+            $total += $prod->products->selling_price;
+        }
+
+        $order->total_price = $total;
+
         $order->tracking_no = 'echo'.rand(1111,9999);
         $order->save();
 

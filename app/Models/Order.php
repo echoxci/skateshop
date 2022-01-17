@@ -20,6 +20,7 @@ class Order extends Model
         'address2',
         'mesto',
         'psc',
+        'total_price',
         'status',
         'message',
         'tracking_no',
