@@ -27,14 +27,14 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/1.jpg') }}" title="Obrazok shopu">
-                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/1.jpg') }}" alt="..." />
+                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/2.jpg') }}" title="Obrazok shopu">
+                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/2.jpg') }}" alt="..." />
 
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/1.jpg') }}" title="Obrazok shopu">
-                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/1.jpg') }}" alt="..." />
+                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/3.jpg') }}" title="Obrazok shopu">
+                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/3.jpg') }}" alt="..." />
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
@@ -43,13 +43,13 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/1.jpg') }}" title="Obrazok shopu">
-                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/1.jpg') }}" alt="..." />
+                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/2.jpg') }}" title="Obrazok shopu">
+                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/2.jpg') }}" alt="..." />
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/1.jpg') }}" title="Obrazok shopu">
-                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/1.jpg') }}" alt="..." />
+                    <a class="portfolio-box" href="{{ asset('assets/images/portfolio/3.jpg') }}" title="Obrazok shopu">
+                        <img class="img-fluid" src="{{ asset('assets/images/portfolio/3.jpg') }}" alt="..." />
                     </a>
                 </div>
             </div>

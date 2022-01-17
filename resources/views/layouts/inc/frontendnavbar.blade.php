@@ -39,9 +39,9 @@
                             <li>
                                 <a href="{{ url('my-orders') }}" class="dropdown-item">Moje Objednavky</a>
                             </li>
-                            <li>
-                                <a href="#" class="dropdown-item">Moj profil</a>
-                            </li>
+{{--                            <li>--}}
+{{--                                <a href="#" class="dropdown-item">Moj profil</a>--}}
+{{--                            </li>--}}
                             <li>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();

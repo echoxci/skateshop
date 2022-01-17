@@ -7,7 +7,7 @@
 @section('content')
     <div class="py-3 mb-4 shadow-sm bg-warning border-top">
         <div class="container">
-            <h6 class="mb-0"><a href="{{ url('/category/') }}" class="top-bar">Collections</a> / <a href="{{ url('/category/'.$products->category->slug) }}" class="top-bar">{{ $products->category->name }}</a> / {{ $products->name }}</h6>
+            <h6 class="mb-0"><a href="{{ url('/category/') }}" class="top-bar">Katalog</a> / <a href="{{ url('/category/'.$products->category->slug) }}" class="top-bar">{{ $products->category->name }}</a> / {{ $products->name }}</h6>
         </div>
     </div>
 

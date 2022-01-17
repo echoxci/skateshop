@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Zobrazenie Objednavky<a href="{{ url('my-orders') }}" class="btn btn-warning text-white float-end">Spat</a></h4>
+                        <h4>Zobrazenie Objednavky<a href="{{ url('my-orders') }}" class="btn btn-primary text-white float-end">Spat</a></h4>
                     </div>
                     <div class="card-body">
                         <div class="row">

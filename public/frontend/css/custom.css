@@ -14,6 +14,9 @@ a {
     text-decoration: none !important;
     color: black;
 }
+a:hover {
+    color: black;
+}
 .btn-primary {
     border-color: black;
     border-width: 2px;
