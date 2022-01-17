@@ -21,56 +21,56 @@
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Name</label>
-                        <input type="text" class="form-control" name="name" required>
+                        <label for="p-add-name">Názov</label>
+                        <input id="p-add-name" type="text" class="form-control" name="name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Slug</label>
-                        <input type="text" class="form-control" name="slug" required>
+                        <label for="p-add-slug">Adresa</label>
+                        <input id="p-add-slug" type="text" class="form-control" name="slug" required>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Small Description</label>
-                        <textarea name="small_description" rows="3" class="form-control" required></textarea>
+                        <label for="p-add-sdesc">Malý Popis</label>
+                        <textarea id="p-add-sdesc" name="small_description" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Description</label>
-                        <textarea name="description" rows="3" class="form-control" required></textarea>
+                        <label for="p-add-desc">Popis</label>
+                        <textarea id="p-add-desc" name="description" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Original Price</label>
-                        <input type="number" class="form-control" name="original_price" required>
+                        <label for="p-add-oprice">Základná cena</label>
+                        <input id="p-add-oprice" type="number" class="form-control" name="original_price" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Selling Price</label>
-                        <input type="number" class="form-control" name="selling_price" required>
+                        <label for="p-add-sprice">Predajná cena</label>
+                        <input id="p-add-sprice" type="number" class="form-control" name="selling_price" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Tax</label>
-                        <input type="number" class="form-control" name="tax" required>
+                        <label for="p-add-tax">Daň</label>
+                        <input id="p-add-tax" type="number" class="form-control" name="tax" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Quantity</label>
-                        <input type="number" class="form-control" name="qty" required>
+                        <label for="p-add-qty">Množstvo</label>
+                        <input id="p-add-qty" type="number" class="form-control" name="qty" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Status</label>
-                        <input type="checkbox" name="status">
+                        <label for="p-add-status">Status</label>
+                        <input id="p-add-status" type="checkbox" name="status">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Trending</label>
-                        <input type="checkbox" name="trending">
+                        <label for="p-add-trending">Trending</label>
+                        <input id="p-add-trending" type="checkbox" name="trending">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Title</label>
-                        <input type="text" class="form-control" name="meta_title" required>
+                        <label for="p-add-mtitle">Meta Názov</label>
+                        <input id="p-add-mtitle" type="text" class="form-control" name="meta_title" required>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Keywords</label>
-                        <textarea name="meta_keywords" rows="3" class="form-control" required></textarea>
+                        <label for="p-add-mkeyw">Meta Kľúčové Slová</label>
+                        <textarea id="p-add-mkeyw" name="meta_keywords" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Description</label>
-                        <textarea name="meta_description" rows="3" class="form-control" required></textarea>
+                        <label for="p-add-mdesc">Meta Popis</label>
+                        <textarea id="p-add-mdesc" name="meta_description" rows="3" class="form-control" required></textarea>
                     </div>
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control">

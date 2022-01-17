@@ -11,11 +11,11 @@
                 <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Category</th>
-                    <th>Name</th>
-                    <th>Selling Price</th>
-                    <th>Image</th>
-                    <th>Action</th>
+                    <th>Kategória</th>
+                    <th>Názov</th>
+                    <th>Predajná cena</th>
+                    <th>Obrázok</th>
+                    <th>Akcia</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -29,8 +29,8 @@
                             <img src="{{ asset('assets/uploads/products/'.$item->image) }}" class="category-image" alt="Image here">
                         </td>
                         <td>
-                            <a href="{{ url('edit-product/'.$item->id) }}" class="btn btn-primary btn-sm">Edit</a>
-                            <a href="{{ url('delete-product/'.$item->id) }}" class="btn btn-danger btn-sm">Delete</a>
+                            <a href="{{ url('edit-product/'.$item->id) }}" class="btn btn-primary btn-sm">Upraviť</a>
+                            <a href="{{ url('delete-product/'.$item->id) }}" class="btn btn-danger btn-sm">Odstrániť</a>
                         </td>
                     </tr>
                 @endforeach

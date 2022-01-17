@@ -13,62 +13,62 @@
                 @csrf
                 <div class="row">
                     <div class="col-md-12 mb-3">
-                        <label for="">Kategoria</label>
+                        <label for="">Kategória</label>
                         <select class="form-select">
                             <option value="">{{ $products->category->name }}</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Name</label>
-                        <input type="text" class="form-control" value="{{ $products->name }}" name="name" required>
+                        <label for="p-edit-name">Názov</label>
+                        <input id="p-edit-name" type="text" class="form-control" value="{{ $products->name }}" name="name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Slug</label>
-                        <input type="text" class="form-control" value="{{ $products->slug }}" name="slug" required>
+                        <label for="p-edit-slug">Adresa</label>
+                        <input id="p-edit-slug" type="text" class="form-control" value="{{ $products->slug }}" name="slug" required>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Small Description</label>
-                        <textarea name="small_description" rows="3" class="form-control" required>{{ $products->small_description }}</textarea>
+                        <label for="p-edit-sdesc">Small Description</label>
+                        <textarea id="p-edit-sdesc" name="small_description" rows="3" class="form-control" required>{{ $products->small_description }}</textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Description</label>
-                        <textarea name="description" rows="3" class="form-control" required>{{ $products->small_description }}</textarea>
+                        <label for="p-edit-desc">Description</label>
+                        <textarea id="p-edit-desc" name="description" rows="3" class="form-control" required>{{ $products->small_description }}</textarea>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Original Price</label>
-                        <input type="number" class="form-control" value="{{ $products->original_price }}" name="original_price" required>
+                        <label for="p-edit-oprice">Original Price</label>
+                        <input id="p-edit-oprice" type="number" class="form-control" value="{{ $products->original_price }}" name="original_price" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Selling Price</label>
-                        <input type="number" class="form-control" value="{{ $products->selling_price }}" name="selling_price" required>
+                        <label for="p-edit-sprice">Selling Price</label>
+                        <input id="p-edit-sprice" type="number" class="form-control" value="{{ $products->selling_price }}" name="selling_price" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Tax</label>
-                        <input type="number" class="form-control" value="{{ $products->tax }}" name="tax" required>
+                        <label for="p-edit-tax">Tax</label>
+                        <input id="p-edit-tax" type="number" class="form-control" value="{{ $products->tax }}" name="tax" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Quantity</label>
-                        <input type="number" class="form-control" value="{{ $products->qty }}" name="qty" required>
+                        <label for="p-edit-qty">Quantity</label>
+                        <input id="p-edit-qty" type="number" class="form-control" value="{{ $products->qty }}" name="qty" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Status</label>
-                        <input type="checkbox" {{ $products->status == 1 ? "checked":'' }} name="status">
+                        <label for="p-edit-status">Status</label>
+                        <input id="p-edit-status" type="checkbox" {{ $products->status == 1 ? "checked":'' }} name="status">
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="">Trending</label>
-                        <input type="checkbox" {{ $products->trending == 1 ? "checked":'' }} name="trending">
+                        <label for="p-edit-trending">Trending</label>
+                        <input id="p-edit-trending" type="checkbox" {{ $products->trending == 1 ? "checked":'' }} name="trending">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Title</label>
-                        <input type="text" class="form-control" value="{{ $products->meta_title }}" name="meta_title" required>
+                        <label for="p-edit-mtitle">Meta Title</label>
+                        <input id="p-edit-mtitle" type="text" class="form-control" value="{{ $products->meta_title }}" name="meta_title" required>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Keywords</label>
-                        <textarea name="meta_keywords" rows="3" class="form-control" required>{{ $products->meta_keywords }}</textarea>
+                        <label for="p-edit-mkeyw">Meta Keywords</label>
+                        <textarea id="p-edit-mkeyw" name="meta_keywords" rows="3" class="form-control" required>{{ $products->meta_keywords }}</textarea>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Meta Description</label>
-                        <textarea name="meta_description" rows="3" class="form-control" required>{{ $products->meta_description }}</textarea>
+                        <label for="p-edit-mdesc">Meta Description</label>
+                        <textarea id="p-edit-mdesc" name="meta_description" rows="3" class="form-control" required>{{ $products->meta_description }}</textarea>
                     </div>
                     @if($products->image)
                         <img src="{{ asset('assets/uploads/products/'.$products->image) }}" alt="Image here" class="product-image">
