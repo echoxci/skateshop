@@ -10,7 +10,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Zobrazenie Objednavky<a href="{{ url('my-orders') }}" class="btn btn-primary text-white float-end">Spat</a></h4>
+                        <h4>Zobrazenie Objednávky<a href="{{ url('my-orders') }}" class="btn btn-primary text-white float-end">Späť</a></h4>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -21,7 +21,7 @@
                                 <div class="border p-2">{{ $orders->lname }}</div>
                                 <label for="">Email</label>
                                 <div class="border p-2">{{ $orders->email }}</div>
-                                <label for="">Tel. Cislo</label>
+                                <label for="">Tel. Číslo</label>
                                 <div class="border p-2">{{ $orders->phone }}</div>
                                 <label for="">Adresa</label>
                                 <div class="border p-2">

@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-    Kategorie
+    Kategórie
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Vsetky kategorie</h2>
+                <h2>Všetky kategórie</h2>
                 <div class="row">
                     @foreach($category as $cate)
                         <div class="col-md-3 mb-3">

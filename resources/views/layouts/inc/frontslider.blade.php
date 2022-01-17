@@ -9,21 +9,21 @@
             <img src="{{ asset('assets/images/masthead.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block pb-5">
                 <h4>EXTREME SKATESHOP</h4>
-                <p>Tie kvalitnejsie produkty na Slovensku</p>
+                <p>Tie kvalitnejšie produkty na Slovensku</p>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/masthead.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block pb-5">
                 <h4>EXTREME SKATESHOP</h4>
-                <p>Zarucene vratenie tovaru</p>
+                <p>Zaručené vrátenie tovaru</p>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/masthead.jpg') }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block pb-5">
                 <h4>EXTREME SKATESHOP</h4>
-                <p>Miesto pre nakup potrieb pre SKATEBOARDING</p>
+                <p>Miesto pre nákup potrieb pre SKATEBOARDING</p>
             </div>
         </div>
     </div>

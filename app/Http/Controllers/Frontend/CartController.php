@@ -30,7 +30,7 @@ class CartController extends Controller
                 }
             }
         } else {
-            return response()->json(['status' => "Musite sa prihlasit"]);
+            return response()->json(['status' => "Musíte sa prihlásiť"]);
         }
     }
 
@@ -47,7 +47,7 @@ class CartController extends Controller
                 $cart = Cart::where('prod_id', $prod_id)->where('user_id',Auth::id())->first();
                 $cart->prod_qty = $product_qty;
                 $cart->update();
-                return response()->json(['status' => "Upravili ste mnozstvo"]);
+                return response()->json(['status' => "Upravili ste množstvo"]);
             }
         }
     }
@@ -58,10 +58,10 @@ class CartController extends Controller
             if (Cart::where('prod_id', $prod_id)->where('user_id',Auth::id())->exists()) {
                 $cartItem = Cart::where('prod_id', $prod_id)->where('user_id',Auth::id())->first();
                 $cartItem->delete();
-                return response()->json(['status' => "Produkt bol uspesne odstraneny"]);
+                return response()->json(['status' => "Produkt bol úspešne odstránený"]);
             }
         } else {
-            return response()->json(['status' => "Musite sa prihlasit"]);
+            return response()->json(['status' => "Musíte sa prihlásiť"]);
         }
     }
 }

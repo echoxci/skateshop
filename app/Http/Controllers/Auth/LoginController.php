@@ -24,10 +24,10 @@ class LoginController extends Controller
     protected function authenticated()
     {
         if(Auth::user()->role_as == '1') {
-            return redirect('/')->with('status','Uspesne ste sa prihlasili ako admin');
+            return redirect('/')->with('status','Úspešne ste sa prihlásili ako admin');
         }
 
-        return redirect('/')->with('status','Uspesne ste sa prihlasili');
+        return redirect('/')->with('status','Úspešne ste sa prihlásili');
     }
 
     /**

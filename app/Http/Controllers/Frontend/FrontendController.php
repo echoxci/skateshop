@@ -24,7 +24,7 @@ class FrontendController extends Controller
             $products = Product::where('category_id', $category->id)->where('status','1')->get();
             return view('frontend.products.index', compact('category', 'products'));
         } else {
-            return redirect('/')->with('status', "Slug does not exist");
+            return redirect('/')->with('status', "Táto adresa neexistuje");
         }
     }
 
@@ -34,10 +34,10 @@ class FrontendController extends Controller
                 $products = Product::where('slug', $prod_slug)->first();
                 return view('frontend.products.view', compact('products'));
             } else {
-                return redirect('/')->with('status', "Tento produkt sa nenasiel");
+                return redirect('/')->with('status', "Tento produkt sa nenašiel");
             }
         } else {
-            return redirect('/')->with('status', "Tato kategoria sa nenasla");
+            return redirect('/')->with('status', "Táto kategória sa nenašla");
         }
     }
 }

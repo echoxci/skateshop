@@ -22,7 +22,7 @@ class OrderController extends Controller
         $orders = Order::find($id);
         $orders->status = $request->input('order_status');
         $orders->update();
-        return redirect('orders')->with('status', "Objednavka uspesne upravena");
+        return redirect('orders')->with('status', "Objednávka úspešne upravená");
     }
 
     public function orderhistory() {

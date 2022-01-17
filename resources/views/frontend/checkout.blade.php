@@ -28,8 +28,8 @@
                                     <input id="checkout-email" type="text" class="form-control" name="email" placeholder="Zadajte svoj email" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="checkout-phone">Tel. cislo</label>
-                                    <input id="checkout-phone" type="text" class="form-control" name="phone" placeholder="Zadajte svoje telefonne cislo"required>
+                                    <label for="checkout-phone">Tel. číslo</label>
+                                    <input id="checkout-phone" type="text" class="form-control" name="phone" placeholder="Zadajte svoje telefónne cislo"required>
                                 </div>
                                 <div class="col-md-6 mt-3">
                                     <label for="checkout-add1">Adresa 1</label>
@@ -44,8 +44,8 @@
                                     <input id="checkout-city" type="text" class="form-control" name="mesto" placeholder="Zadajte svoje mesto" required>
                                 </div>
                                 <div class="col-md-6 mt-3">
-                                    <label for="checkout-psc">PSC</label>
-                                    <input id="checkout-psc" type="text" class="form-control" name="psc" placeholder="Zadajte svoj PSC" required>
+                                    <label for="checkout-psc">PSČ</label>
+                                    <input id="checkout-psc" type="text" class="form-control" name="psc" placeholder="Zadajte svoje PSČ" required>
                                 </div>
                             </div>
                         </div>
@@ -55,13 +55,13 @@
                     <div class="card">
                         @if($cartItems->count() > 0)
                         <div class="card-body">
-                            <h6>Vasa objednavka</h6>
+                            <h6>Vaša objednávka</h6>
                             <hr>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Nazov</th>
-                                        <th>Pocet ks</th>
+                                        <th>Názov</th>
+                                        <th>Počet ks</th>
                                         <th>Cena</th>
                                     </tr>
                                 </thead>
@@ -76,12 +76,12 @@
                                 </tbody>
                             </table>
                             <hr>
-                            <button type="submit" class="btn btn-primary w-100">Dokoncit objednavku</button>
+                            <button type="submit" class="btn btn-primary w-100">Dokončiť objednávku</button>
                         </div>
                         @else
                         <div class="card-body text-center">
-                            <h5 class="text-center">Nemate v kosiku ziadny produkt</h5>
-                            <a href="{{ url('category') }}" class="btn btn-primary float-end">Zacat s nakupom</a>
+                            <h5 class="text-center">Nemáte v košíku žiadny produkt</h5>
+                            <a href="{{ url('category') }}" class="btn btn-primary float-end">Začať s nákupom</a>
                         </div>
                         @endif
                     </div>

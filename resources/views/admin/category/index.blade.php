@@ -3,7 +3,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h4>Kategorie</h4>
+            <h4>Kategórie</h4>
             <hr>
         </div>
         <div class="card-body">
@@ -11,10 +11,10 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Image</th>
-                        <th>Action</th>
+                        <th>Názov</th>
+                        <th>Popis</th>
+                        <th>Obrázok</th>
+                        <th>Akcia</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,8 +27,8 @@
                             <img src="{{ asset('assets/uploads/category/'.$item->image) }}" class="category-image" alt="Image here">
                         </td>
                         <td>
-                            <a href="{{url('edit-category/'.$item->id)}}" class="btn btn-primary">Edit</a>
-                            <a href="{{url('delete-category/'.$item->id)}}" class="btn btn-danger">Delete</a>
+                            <a href="{{url('edit-category/'.$item->id)}}" class="btn btn-primary">Upraviť</a>
+                            <a href="{{url('delete-category/'.$item->id)}}" class="btn btn-danger">Odstrániť</a>
                         </td>
                     </tr>
                 @endforeach

@@ -18,7 +18,7 @@
                     <a class="nav-link" href="{{ url('/') }}">
                         <i class="material-icons">store</i>
                         <p class="d-lg-none d-md-block">
-                            Domovska stranka
+                            Domovská stranká
                         </p>
                     </a>
                 </li>
@@ -26,12 +26,10 @@
                     <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="material-icons">person</i>
                         <p class="d-lg-none d-md-block">
-                            Account
+                            Účet
                         </p>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                        <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">Settings</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();

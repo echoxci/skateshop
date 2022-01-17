@@ -1,6 +1,6 @@
 <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
     <div class="logo"><a href="#" class="simple-text logo-normal">
-            Extreme Skateshop
+            Extreme skate-shop
         </a></div>
     <div class="sidebar-wrapper">
         <ul class="nav">
@@ -13,13 +13,13 @@
             <li class="nav-item {{ Request::is('categories') ? 'active':'' }}">
                 <a class="nav-link" href="{{ url('categories') }}">
                     <i class="material-icons">content_paste</i>
-                    <p>Kategorie</p>
+                    <p>Kategórie</p>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('add-category') ? 'active':'' }}">
                 <a class="nav-link" href="{{ url('add-category') }}">
                     <i class="material-icons">content_paste</i>
-                    <p>Pridat kategoriu</p>
+                    <p>Pridať kategóriu</p>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('products') ? 'active':'' }}">
@@ -31,13 +31,13 @@
             <li class="nav-item {{ Request::is('add-product') ? 'active':'' }}">
                 <a class="nav-link" href="{{ url('add-product') }}">
                     <i class="material-icons">content_paste</i>
-                    <p>Pridat produkt</p>
+                    <p>Pridať produkt</p>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('orders') ? 'active':'' }}">
                 <a class="nav-link" href="{{ url('orders') }}">
                     <i class="material-icons">content_paste</i>
-                    <p>Objednavky</p>
+                    <p>Objednávky</p>
                 </a>
             </li>
         </ul>

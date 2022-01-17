@@ -1,14 +1,14 @@
 @extends('layouts.front')
 
 @section('title')
-    Moj kosik
+    Môj košík
 @endsection
 
 @section('content')
 <div class="py-3 mb-4 shadow-sm bg-warning border-top">
     <div class="container">
         <h6 class="mb-0">
-            <a href="{{ url('/category/') }}" class="top-bar">Katalog</a> / Kosik
+            <a href="{{ url('/category/') }}" class="top-bar">Katalóg</a> / Košík
         </h6>
     </div>
 </div>
@@ -31,7 +31,7 @@
                         <div class="col-md-3">
                             <input type="hidden" class="prod_id" value="{{ $item->prod_id }}">
                             @if($item->products->qty >= $item->prod_qty)
-                            <label for="mnozstvo">Mnozstvo</label>
+                            <label for="mnozstvo">Množstvo</label>
                             <div class="input-group text-center mb-3" style="width: 130px">
                                 <button class="input-group-text change-quantity decrement-btn">-</button>
                                 <input type="text" name="mnozstvo" value="{{ $item->prod_qty }}" class="form-control text-center qty-input">
@@ -43,22 +43,22 @@
                             @endif
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-danger delete-cart-item"><i class="fa fa-trash"></i>Remove</button>
+                            <button class="btn btn-danger delete-cart-item"><i class="fa fa-trash"></i> Odstrániť</button>
                         </div>
                     </div>
                 @endforeach
             </div>
             <div class="card-footer">
                 <h6>
-                    Celkova cena: {{ $total }} &euro;
-                    <a href="{{ url('checkout') }}" class="btn btn-success float-end">Pokracovat</a>
+                    Celková cena: {{ $total }} &euro;
+                    <a href="{{ url('checkout') }}" class="btn btn-success float-end">Pokračovať</a>
                 </h6>
     
             </div>
         @else
             <div class="card-body text-center">
-                <h2>Vas <i class="fa fa-shopping-cart"></i> kosik je prazdny</h2>
-                <a href="{{ url('category') }}" class="btn btn-primary float-end">Zacat s nakupom</a>
+                <h2>Váš <i class="fa fa-shopping-cart"></i> košík je prázdny</h2>
+                <a href="{{ url('category') }}" class="btn btn-primary float-end">Začať s nákupom</a>
             </div>
         @endif
     </div>
