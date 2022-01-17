@@ -36,7 +36,7 @@ class CategoryController extends Controller
         $category->meta_keywords = $request->input('meta_keywords');
         $category->meta_description = $request->input('meta_description');
         $category->save();
-        return redirect('/dashboard')->with('status', "Category Added Successfully");
+        return redirect('/dashboard')->with('status', "Uspesne ste vytvorili kategoriu");
     }
 
     public function edit($id) {
@@ -66,7 +66,7 @@ class CategoryController extends Controller
         $category->meta_keywords = $request->input('meta_keywords');
         $category->meta_description = $request->input('meta_description');
         $category->update();
-        return redirect('categories')->with('status',"Category Updated Successfully");
+        return redirect('categories')->with('status',"Uspesne ste upravili kategoriu");
     }
 
     public function destroy($id) {
@@ -78,6 +78,6 @@ class CategoryController extends Controller
             }
         }
         $category->delete();
-        return redirect('categories')->with('status',"Category Deleted Successfully");
+        return redirect('categories')->with('status',"Uspesne ste odstranili kategoriu");
     }
 }

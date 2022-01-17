@@ -24,10 +24,10 @@ class LoginController extends Controller
     protected function authenticated()
     {
         if(Auth::user()->role_as == '1') {
-            return redirect('dashboard')->with('status','Welcome to your dashboard');
+            return redirect('/')->with('status','Uspesne ste sa prihlasili ako admin');
         }
 
-        return redirect('/')->with('status','Logged in successfully');
+        return redirect('/')->with('status','Uspesne ste sa prihlasili');
     }
 
     /**

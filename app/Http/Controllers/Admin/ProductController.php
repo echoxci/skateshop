@@ -44,7 +44,7 @@ class ProductController extends Controller
         $products->meta_keywords = $request->input('meta_keywords');
         $products->meta_description = $request->input('meta_description');
         $products->save();
-        return redirect('products')->with('status',"Product Added Successfully");
+        return redirect('products')->with('status',"Uspesne ste pridali produkt");
     }
 
     public function edit($id) {
@@ -79,7 +79,7 @@ class ProductController extends Controller
         $products->meta_keywords = $request->input('meta_keywords');
         $products->meta_description = $request->input('meta_description');
         $products->update();
-        return redirect('products')->with('status','Product Updated Successfully');
+        return redirect('products')->with('status','Uspesne ste upravili produkt');
     }
 
     public function destroy($id) {
@@ -91,6 +91,6 @@ class ProductController extends Controller
             }
         }
         $products->delete();
-        return redirect('products')->with('status', 'Product Deleted Successfully');
+        return redirect('products')->with('status', 'Uspesne ste vymazali produkt');
     }
 }

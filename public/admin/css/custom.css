@@ -44,3 +44,6 @@ a.dropdown-item:active {
 .a:hover {
     background-color: brown;
 }
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu a:hover, .dropdown-menu a:focus, .dropdown-menu a:active {
+    background-color: brown !important;
+}

@@ -15,9 +15,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('category') }}">Kategorie</a>
                 </li>
+                @guest
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('cart') }}">Kosik</a>
                 </li>
+                @endguest
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-item">
@@ -32,16 +35,18 @@
                     @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a href="{{ url('my-orders') }}" class="dropdown-item">Moje Objednavky</a>
                             </li>
-{{--                            <li>--}}
-{{--                                <a href="#" class="dropdown-item">Moj profil</a>--}}
-{{--                            </li>--}}
+                            @if(Auth::user()->role_as == '1')
+                            <li>
+                                <a href="{{ '/dashboard' }}" class="dropdown-item">Admin Panel</a>
+                            </li>
+                            @endif
                             <li>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();

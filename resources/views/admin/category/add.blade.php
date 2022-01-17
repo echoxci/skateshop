@@ -12,8 +12,8 @@
                 @csrf
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="">Name</label>
-                        <input type="text" class="form-control" name="name" required>
+                        <label for="add-name">Name</label>
+                        <input id="add-name" type="text" class="form-control" name="name" required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="">Slug</label>
