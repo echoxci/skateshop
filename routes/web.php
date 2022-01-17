@@ -33,6 +33,7 @@ Route::post('update-cart', [CartController::class, 'updatecart']);
 Route::middleware(['auth'])->group(function() {
     Route::get('cart', [CartController::class, 'viewcart']);
     Route::get('checkout', [CheckoutController::class, 'index']);
+    Route::post('place-order',[CheckoutController::class, 'placeorder']);
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
